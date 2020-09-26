@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">LabsCM20201-Gr02</string>
     <string name="personal_info">Información Personal</string>
-    <string name="informacion_de_contacto">Información de Contacto</string>
     <string name="telefono">Teléfono</string>
     <string name="direccion">Dirección</string>
     <string name="email">Email</string>
@@ -17,4 +16,10 @@
     <string name="dd_mm_aaaa">DD/MM/AAAA</string>
     <string name="sexo">Sexo:</string>
     <string name="todo">TODO</string>
+    <string name="informacion_de_contacto">Información de Contacto</string>
+    <string name="grado">Grado de escolaridad</string>
+    <string name="primaria">Primaria</string>
+    <string name="secundaria">Secundaria</string>
+    <string name="universitaria">Universitaria</string>
+    <string name="otro">Otro</string>
 </resources>
