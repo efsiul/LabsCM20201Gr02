@@ -88,7 +88,7 @@ class PersonalData : AppCompatActivity() {
     }
 
     fun siguienteActividad(){
-        val intent : Intent = Intent(this, DummyActivity::class.java)
+        val intent : Intent = Intent(this, ContactData::class.java)
         startActivity(intent)
     }
 }

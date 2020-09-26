@@ -8,4 +8,5 @@
     <string name="pais">País</string>
     <string name="ciudad">Ciudad</string>
     <string name="siguiente">Siguiente</string>
+    <string name="sexo">Sexo:</string>
 </resources>
