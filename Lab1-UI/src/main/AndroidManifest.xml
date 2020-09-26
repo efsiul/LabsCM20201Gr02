@@ -3,13 +3,24 @@
     package="co.edu.udea.compumovil.labsCM20201_gr02.lab1">
 
     <application
+        android:fullBackupContent="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< feature-Felipe
+        <activity android:name=".ContactData">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+=======
         <activity android:name=".DummyActivity"></activity>
+>>>>>>> master
         <activity android:name=".PersonalData">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
