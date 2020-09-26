@@ -10,37 +10,36 @@
         android:id="@+id/textView_ContactData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/informacion_de_contacto"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone_Contact"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:hint="@string/telefono"
-        android:autofillHints="@string/telefono"
         android:id="@+id/editTextPhone_Contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@string/telefono"
         android:ems="10"
+        android:hint="@string/telefono"
         android:inputType="phone"
         android:text="@string/telefono"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_ContactData"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:hint="@string/email"
-        android:autofillHints="@string/email"
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@string/email"
         android:ems="10"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:text="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,36 +47,37 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone_Contact" />
 
     <AutoCompleteTextView
-        android:hint="@string/pais"
         android:id="@+id/autoCompleteTextView"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:hint="@string/pais"
         android:text="@string/pais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
 
     <AutoCompleteTextView
-        android:hint="@string/ciudad"
         android:id="@+id/autoCompleteTextView_city"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/ciudad"
         android:text="@string/ciudad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="253dp" />
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:hint="@string/direccion"
-        android:autofillHints="@string/direccion"
         android:id="@+id/editTextText_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:autofillHints="@string/direccion"
         android:ems="10"
+        android:hint="@string/direccion"
         android:inputType="textPersonName"
         android:text="@string/direccion"
         app:layout_constraintEnd_toEndOf="parent"
