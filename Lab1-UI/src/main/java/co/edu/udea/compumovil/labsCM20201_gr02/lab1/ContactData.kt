@@ -19,18 +19,24 @@ class ContactData : AppCompatActivity() {
         findViewById<Button>(R.id.button_Finalizar).setOnClickListener { agregaInfo(it) }
 
     }
-    private fun agregaInfo(view: View?) {
+    private fun agregaInfo(view: View) {
         val inputTextPhone = findViewById<EditText>(R.id.telefono)
         val inputTextEmail = findViewById<EditText>(R.id.email)
-        val inputTextCountry=findViewById<AutoCompleteTextView>(R.id.pais    )
+        val inputTextCountry=findViewById<EditText>(R.id.pais)
+        val inputTextDir=findViewById<EditText>(R.id.direccion)
+        val inputTextCiu=findViewById<EditText>(R.id.ciudad)
         val textPhone= inputTextPhone.text
         val textEmail = inputTextEmail.text
+        val textDir= inputTextDir.text
+        val textCiu= inputTextCiu.text
         val autoCompCountry=inputTextCountry.text
 
-        if (inputTextPhone.text.toString().isNotEmpty() || inputTextEmail.text.toString().isNotEmpty()|| inputTextCountry.text.toString().isNotEmpty()){
-            Log.i("Telefono", "$textPhone $textEmail")
-
-            Log.i("Nació en",autoCompCountry.toString())
+        if (inputTextPhone.text.toString().isNotEmpty() && inputTextEmail.text.toString().isNotEmpty()&& inputTextCountry.text.toString().isNotEmpty()){
+            Log.i("Telefono", textPhone.toString())
+            Log.i("Direccion", textCiu.toString())
+            Log.i("Email", textEmail.toString())
+            Log.i("País",autoCompCountry.toString())
+            Log.i("Ciudad", inputTextCiu.toString())
 
         }else {
             Toast.makeText(this, "Debe ingresar campos obligatorios", Toast.LENGTH_SHORT).show()
