@@ -16,18 +16,18 @@ class ContactData : AppCompatActivity() {
         setContentView(R.layout.activity_contact_data)
 
 
-        findViewById<Button>(R.id.button_siguiente).setOnClickListener { agregaInfo(it) }
+        findViewById<Button>(R.id.button_Finalizar).setOnClickListener { agregaInfo(it) }
 
     }
     private fun agregaInfo(view: View?) {
-        val editTextPhone = findViewById<EditText>(R.id.editTextPhone_Contact)
-        val editTextEmail = findViewById<EditText>(R.id.editTextTextEmailAddress2)
-        val autocompleteCountry=findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView    )
-        val textPhone= editTextPhone.text
-        val textEmail = editTextEmail.text
-        val autoCompCountry=autocompleteCountry.text
+        val inputTextPhone = findViewById<EditText>(R.id.telefono)
+        val inputTextEmail = findViewById<EditText>(R.id.email)
+        val inputTextCountry=findViewById<AutoCompleteTextView>(R.id.pais    )
+        val textPhone= inputTextPhone.text
+        val textEmail = inputTextEmail.text
+        val autoCompCountry=inputTextCountry.text
 
-        if (editTextPhone.text.toString().isNotEmpty() || editTextEmail.text.toString().isNotEmpty() || autocompleteCountry.text.toString().isNotEmpty()){
+        if (inputTextPhone.text.toString().isNotEmpty() || inputTextEmail.text.toString().isNotEmpty()|| inputTextCountry.text.toString().isNotEmpty()){
             Log.i("Telefono", "$textPhone $textEmail")
 
             Log.i("Nació en",autoCompCountry.toString())
