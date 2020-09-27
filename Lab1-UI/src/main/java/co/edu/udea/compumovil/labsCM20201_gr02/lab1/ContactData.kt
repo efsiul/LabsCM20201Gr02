@@ -33,7 +33,7 @@ class ContactData : AppCompatActivity() {
 
         if (inputTextPhone.text.toString().isNotEmpty() && inputTextEmail.text.toString().isNotEmpty()&& inputTextCountry.text.toString().isNotEmpty()){
             Log.i("Telefono", textPhone.toString())
-            Log.i("Direccion", textCiu.toString())
+            Log.i("Direccion", textDir.toString())
             Log.i("Email", textEmail.toString())
             Log.i("País",autoCompCountry.toString())
             Log.i("Ciudad", inputTextCiu.toString())
