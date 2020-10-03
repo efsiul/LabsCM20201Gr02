@@ -1,2 +1,3 @@
-include ':Lab1-UI',':lab2activities'
+include ':lab2activities'
+include ':Lab1-UI'
 rootProject.name = "LabsCM20201-Gr02"
