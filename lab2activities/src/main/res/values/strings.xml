@@ -3,5 +3,10 @@
     <string name="usuario">Usuario</string>
     <string name="contrase_a">Contraseña</string>
     <string name="registro">Registro</string>
-    <string name="sitios_turisticos">Sitios Turisticos</string>
+    <string name="sitios_turisticos">Sitios Turísticos</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="correoElectronico">Correo Electrónico</string>
+    <string name="RegRegistro">REGISTRO</string>
+    <string name="guardar">Guardar</string>
 </resources>
